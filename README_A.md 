@@ -1,0 +1,20 @@
+# Project 4
+
+Foobar is a Python library for dealing with word pluralization.
+
+## Description of the chosen data:
+
+
+1. Data were obtained from kaggle, its name is [Movies on Google Play](https://www.kaggle.com/fatimahaloqayli/movies-on-google-play)
+2. Data has the following columns: `category`, `num_voter`, `rating`, `price`, `year_of_release`, `month_of_release`
+3. the shape is 200 row and 7 columns
+
+
+
+## Problem Statment
+
+The problem that I'm trying to solve is that I'll divide movies category into different clusters of genre assuming that we don't have the  movie category genre column
+
+
+I see this data as good candidate to apply unsupervised learning algorithm especially Kmeans clustering.
+I'll use the `category` column as the target and delete it and check if the kmean model predicts the same original number of categories.
